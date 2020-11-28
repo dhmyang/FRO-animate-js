@@ -1,0 +1,21 @@
+body{
+background: aquamarine;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vlakje {
+background-color: #30b0b0;
+width: 15vw;
+height: 15vh;
+transform: translateX(2em);
+}
+
+.animeer-knop {
+    height: 1.5em;
+}
