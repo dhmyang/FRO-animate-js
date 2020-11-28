@@ -19,19 +19,38 @@ nav{
     flex-direction: column;
 }
 
+.nav__btn{
+    padding: .5em .9em;
+    box-sizing: border-box;
+    width: 2.7em;
+}
+.nav__btn:hover{
+    color: aquamarine;
+    background-color: white;
+}
+
 .nav__item{
     margin-bottom: .1em;
 }
-
 .nav__link{
     color: white;
     background-color: #30b0b0;
     text-decoration: none;
     display: block;
     padding: .2em .5em;
-
-
+    transform: translateX(-8.4em);
+    transition: transform .8s ease-in-out;
 }
+
+.nav__link--slide{
+    transform: translateX(0);
+}
+
+.nav__link:hover{
+    color: #30b0b0;
+    background: white;
+}
+
 main {
     min-height: 100vh;
     display: flex;
