@@ -1,5 +1,7 @@
 body{
 background: aquamarine;
+min-height: 100vh;
+margin: 0;
 }
 
 main {
@@ -7,6 +9,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .vlakje {
@@ -14,6 +17,11 @@ background-color: #30b0b0;
 width: 15vw;
 height: 15vh;
 transform: translateX(2em);
+transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.box_right{
+    transform: translateX(60vw)rotate(180deg);
 }
 
 .animeer-knop {
