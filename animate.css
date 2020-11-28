@@ -2,8 +2,36 @@ body{
 background: aquamarine;
 min-height: 100vh;
 margin: 0;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: #30b0b0;
+}
+nav{
+    position: fixed;
 }
 
+.nav {
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav__item{
+    margin-bottom: .1em;
+}
+
+.nav__link{
+    color: white;
+    background-color: #30b0b0;
+    text-decoration: none;
+    display: block;
+    padding: .2em .5em;
+
+
+}
 main {
     min-height: 100vh;
     display: flex;
