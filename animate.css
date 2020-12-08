@@ -5,6 +5,7 @@ body {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: #30b0b0;
 }
+
 nav {
   position: fixed;
 }
@@ -24,6 +25,7 @@ nav {
   box-sizing: border-box;
   width: 2.7em;
 }
+
 .nav__btn:hover {
   color: aquamarine;
   background-color: white;
@@ -40,10 +42,6 @@ nav {
   padding: 0.2em 0.5em;
   transform: translateX(-8.4em);
   transition: transform 0.8s ease-in-out;
-}
-
-.nav__link--slide {
-  transform: translateX(0);
 }
 
 .nav__link:hover {
@@ -77,4 +75,64 @@ main {
 
 .fas.hidden {
   display: none;
+}
+
+.nav__link--schuif-in .nav__tekst {
+  animation: ijl-na 2s forwards;
+}
+
+@keyframes ijl-na {
+  0% {
+    transform: translateX(-2em);
+  }
+  50% {
+    transform: translateX(0.6em);
+  }
+  75% {
+    transform: translateX(-0.3em);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .nav {
+    flex-direction: row;
+    width: 100vw;
+  }
+
+  .nav__link {
+    transform: translateY(-2em);
+  }
+
+  .nav__link--slide {
+    transform: translateY(0);
+  }
+
+  .nav__item {
+    margin-left: 0.1em;
+    margin-top: 0;
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .nav__link--slide .nav__tekst {
+    animation: ijl-na-vert 2s forwards;
+  }
+
+  @keyframes ijl-na-vert {
+    0% {
+      transform: translateY(-1em);
+    }
+    50% {
+      transform: translateY(0.1em);
+    }
+    75% {
+      transform: translateY(-0.05em);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 }
