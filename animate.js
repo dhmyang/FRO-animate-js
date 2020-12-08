@@ -14,4 +14,7 @@ menuBtn.addEventListener("click", () => {
       item.classList.toggle("nav__link--slide");
     }, 100 * index);
   });
+
+  document.querySelector(".fa-bars").classList.toggle("hidden");
+  document.querySelector(".fa-times").classList.toggle("hidden");
 });
