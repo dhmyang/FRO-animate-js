@@ -76,6 +76,9 @@ main {
 .fas.hidden {
   display: none;
 }
+.nav__link--slide {
+  transform: translateX(0);
+}
 
 .nav__link--slide .nav__tekst {
   animation: ijl-na 2s forwards;
@@ -125,12 +128,15 @@ main {
     0% {
       transform: translateY(-1em);
     }
+
     50% {
       transform: translateY(0.1em);
     }
+
     75% {
       transform: translateY(-0.05em);
     }
+
     100% {
       transform: translateY(0);
     }
